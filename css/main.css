@@ -1,0 +1,145 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import "./fonts/Gilroy/stylesheet.css";
+
+/* font-family: 'Work Sans', sans-serif; */
+/* font-family: 'Gilroy';sans-serif; */
+body {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+
+/** header **/
+.header {
+  min-height: 100vh;
+  background-color: #e1edf2;
+  background-image: url(../img/header/header_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  max-width: 1750px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.header__top {
+  margin-bottom: 126px;
+  padding: 45px 0;
+}
+
+/**header nav **/
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 118px;
+}
+
+.link {
+  color: #114455;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 24px;
+  padding-right: 72px;
+  border: 1px solid #114455;
+  border-radius: 2px;
+  color: #114455;
+  font-size: 20px;
+  font-weight: 800;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+  -webkit-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+  -moz-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+  -ms-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+  -o-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+}
+
+.btn:hover,
+btn:focus {
+  background-color: #114455;
+  color: #fff;
+}
+.btn:active {
+  top: 1px;
+}
+
+.btn:hover::after {
+  background-image: url(../img/icons/arrow_right_white.svg);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icons/arrow_right_black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.btn--big {
+  padding: 14px 32px;
+  padding-right: 80px;
+}
+
+.btn--dark {
+  background-color: #114455;
+  color: white;
+}
+
+.btn--dark::after {
+  background-image: url(../img/icons/arrow_right_white.svg);
+}
+
+.btn--dark:hover,
+btn--dark:active {
+  background-color: #000;
+}
+
+/** header content**/
+.header__content {
+  max-width: 1060px;
+}
+
+.header__title {
+  margin-bottom: 48px;
+  max-width: 734px;
+  font-size: 80px;
+  font-weight: 800;
+  color: #114455;
+}
+
+.header__text {
+  margin-bottom: 72px;
+  font-size: 34px;
+  font-weight: 400;
+  color: #1f1f1f;
+}
+
+.header__text p + p {
+  margin-top: 1em;
+}
+
+.header__btn {
+}
