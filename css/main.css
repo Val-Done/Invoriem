@@ -9,6 +9,10 @@ body {
   font-weight: 500;
 }
 
+/* .none {
+  display: none;
+} */
+
 /** header **/
 .header {
   min-height: 100vh;
@@ -22,6 +26,13 @@ body {
   max-width: 1750px;
   padding: 15px;
   margin: 0 auto;
+}
+/** Container-right для карусели **/
+
+
+.container-right {
+  padding-left: calc((100%-1750px) / 2+15px);
+  /* !От 100% ширины отнимаем ширину контейнера получаем отствы делим на два получаем один и добавляем на 15 пикселей */
 }
 
 .header__top {
@@ -53,7 +64,7 @@ body {
   padding: 10px 24px;
   padding-right: 72px;
   border: 1px solid #114455;
-  
+
   color: #114455;
   font-size: 20px;
   font-weight: 800;
@@ -74,6 +85,7 @@ btn:focus {
   background-color: #114455;
   color: #fff;
 }
+
 .btn:active {
   top: 1px;
 }
@@ -142,5 +154,58 @@ btn--dark:active {
   margin-top: 1em;
 }
 
-.header__btn {
+/**case studies**/
+
+.case-studies {
+  padding: 184px 0px;
+}
+
+.case-studies__title {
+  margin-bottom: 12px;
+  max-width: 1070px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 800;
+  color: #1f1f1f;
+}
+
+.case-studies__text {
+  max-width: 1070px;
+  margin-bottom: 100px;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 1.57;
+    color: #1f1f1f;
+}
+
+.slider {
+}
+.slider__item {
+}
+.slide {
+  display: inline-block;
+  position: relative;
+  padding-left: 80px;
+}
+.slide__title {
+  position: absolute;
+  left: 0;
+  bottom: 104px;
+  font-size: 140px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(#eee, #333);
+
+  background: linear-gradient(
+    90deg,
+    rgba(17, 68, 85, 1) 80px,
+    rgba(255, 255, 255, 1) 80px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slide__img {
 }
