@@ -53,7 +53,7 @@ body {
   padding: 10px 24px;
   padding-right: 72px;
   border: 1px solid #114455;
-  border-radius: 2px;
+  
   color: #114455;
   font-size: 20px;
   font-weight: 800;
@@ -61,11 +61,12 @@ body {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
-  transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+  border-radius: 2px;
   -webkit-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
   -moz-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
   -ms-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
   -o-transition: color 0.15s ease-in, background-color 0, 15s ease-in;
+  transition: color 0.15s ease-in, background-color 0, 15s ease-in;
 }
 
 .btn:hover,
@@ -91,11 +92,11 @@ btn:focus {
   background-position: center;
   right: 24px;
   top: 50%;
-  transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .btn--big {
